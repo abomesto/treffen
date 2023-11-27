@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
-  // const [eventsNumber, setEventsNumber] = useState("32");
+  const [eventsNumber, setEventsNumber] = useState("32");
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
