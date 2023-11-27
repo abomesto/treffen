@@ -36,8 +36,7 @@ defineFeature(feature, (test) => {
     when,
     then,
   }) => {
-    let AppComponent;
-    given("the user has events displayed", async () => {});
+    given("the user has events displayed", () => {});
 
     when("the user chooses to change the number of events displayed", () => {});
 
