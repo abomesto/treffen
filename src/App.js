@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CitySearch from "./components/CitySearch";
 import EventList from "./components/EventList";
 import NumberOfEvents from "./components/NumberOfEvents";
+import CityEventsChart from "./components/CityEventsChart";
 import { extractLocations, getEvents } from "./api";
 import { InfoAlert, ErrorAlert, WarningAlert } from "./components/Alert";
 
@@ -37,20 +38,23 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="title">Treffen App</h1>
+      <p>Choose you City Please</p>
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
         {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
         {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
       </div>
-      <NumberOfEvents
-        setCurrentNOE={setCurrentNOE}
-        setErrorAlert={setErrorAlert}
-      />
       <CitySearch
         allLocations={allLocations}
         setCurrentCity={setCurrentCity}
         setInfoAlert={setInfoAlert}
       />
+      <NumberOfEvents
+        setCurrentNOE={setCurrentNOE}
+        setErrorAlert={setErrorAlert}
+      />
+      <CityEventsChart allLocations={allLocations} events={events} />
       <EventList events={events} />
     </div>
   );
