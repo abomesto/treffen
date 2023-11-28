@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/treffen/static/css/main.e8433431.css",
-    "main.js": "/treffen/static/js/main.0f299368.js",
+    "main.js": "/treffen/static/js/main.a566cc7c.js",
     "static/js/787.a72dda0e.chunk.js": "/treffen/static/js/787.a72dda0e.chunk.js",
     "service-worker.js": "/treffen/service-worker.js",
     "index.html": "/treffen/index.html",
     "main.e8433431.css.map": "/treffen/static/css/main.e8433431.css.map",
-    "main.0f299368.js.map": "/treffen/static/js/main.0f299368.js.map",
+    "main.a566cc7c.js.map": "/treffen/static/js/main.a566cc7c.js.map",
     "787.a72dda0e.chunk.js.map": "/treffen/static/js/787.a72dda0e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8433431.css",
-    "static/js/main.0f299368.js"
+    "static/js/main.a566cc7c.js"
   ]
 }
