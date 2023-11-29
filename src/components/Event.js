@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getEvents } from "../api";
 import mockData from "../mock-data";
+import moment from "moment";
 
 const Event = ({ event }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -8,7 +9,7 @@ const Event = ({ event }) => {
   return (
     <li className="event">
       <h3>{event.summary}</h3>
-      <p>{event.created}</p>
+      <p>{moment(event.created).format("MMM Do YY")}</p>
       <p>{event.location}</p>
       <button
         className="details-btn"
